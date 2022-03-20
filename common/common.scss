@@ -8,7 +8,7 @@
   background: white;
   z-index: z("header") - 10;
   margin: auto;
-  bottom: 1em;
+  bottom: 0;
   left: 0;
   right: 0;
   .offline-ui-content:before {
@@ -80,21 +80,22 @@
 }
 
 .offline-ui {
-  border-radius: 4px;
-  font-family: "Helvetica Neue", sans-serif;
+  border-radius: 1em;
   padding: 1em;
-  bottom: 1em;
-  width: 38em;
+  bottom: 0;
+  width: 600px;
   max-width: 100%;
   overflow: hidden;
   .mobile-view & {
-    @media (max-width: 38em) {
-      border-radius: 0;
-      bottom: 50px;
-      .tab-bar-hidden & {
-        bottom: 0;
-      }
-    }
+    border-radius: 0;
+    bottom: 50px;
+  }
+  .tab-bar-hidden & {
+    bottom: 0;
+  }
+  @media (max-width: 600px) {
+    border-radius: 0;
+    bottom: 50px;
   }
   .offline-ui-content:before {
     line-height: 1.25em;
