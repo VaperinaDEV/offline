@@ -87,11 +87,13 @@
   width: 38em;
   max-width: 100%;
   overflow: hidden;
-  @media (max-width: 38em) {
-    border-radius: 0;
-    bottom: 50px;
-    .tab-bar-hidden & {
-      bottom: 0;
+  .mobile-view & {
+    @media (max-width: 38em) {
+      border-radius: 0;
+      bottom: 50px;
+      .tab-bar-hidden & {
+        bottom: 0;
+      }
     }
   }
   .offline-ui-content:before {
