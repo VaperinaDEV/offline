@@ -8,7 +8,7 @@
   background: white;
   z-index: z("dropdown") - 10;
   margin: auto;
-  bottom: 0;
+  top: var(--header-offset);
   left: 0;
   right: 0;
   .offline-ui-content:before {
@@ -80,21 +80,17 @@
 }
 
 .offline-ui {
-  border-radius: 0.25em;
+  border-radius: 0;
   padding: 1em;
-  bottom: 0;
-  width: 600px;
+  top: var(--header-offset);
+  width: 100%;
   max-width: 100%;
   overflow: hidden;
   .mobile-view & {
-    border-radius: 0;
     bottom: 50px;
   }
   .tab-bar-hidden & {
     bottom: 0;
-  }
-  @media (max-width: 600px) {
-    border-radius: 0;
   }
   .offline-ui-content:before {
     line-height: 1.25em;
