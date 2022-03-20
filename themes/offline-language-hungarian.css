@@ -1,6 +1,6 @@
 /* line 6, ../sass/_content.sass */
 .offline-ui .offline-ui-retry:before {
-  content: "Újracsatlakozás";
+  content: "Csatlakozás";
 }
 /* line 11, ../sass/_content.sass */
 .offline-ui.offline-ui-up .offline-ui-content:before {
@@ -40,7 +40,7 @@
 }
 /* line 42, ../sass/_content.sass */
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
-  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " másodpercen belül...";
+  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " mp...";
 }
 @media (max-width: 568px) {
   /* line 42, ../sass/_content.sass */
@@ -50,7 +50,7 @@
 }
 /* line 50, ../sass/_content.sass */
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
-  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " másodpercen belül...";
+  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " mp...";
 }
 @media (max-width: 568px) {
   /* line 50, ../sass/_content.sass */
@@ -60,7 +60,7 @@
 }
 /* line 58, ../sass/_content.sass */
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
-  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " percen belül...";
+  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " p...";
 }
 @media (max-width: 568px) {
   /* line 58, ../sass/_content.sass */
@@ -70,7 +70,7 @@
 }
 /* line 66, ../sass/_content.sass */
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before {
-  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " percen belül...";
+  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " p...";
 }
 @media (max-width: 568px) {
   /* line 66, ../sass/_content.sass */
@@ -80,7 +80,7 @@
 }
 /* line 74, ../sass/_content.sass */
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before {
-  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " órán belül...";
+  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " ó...";
 }
 @media (max-width: 568px) {
   /* line 74, ../sass/_content.sass */
@@ -90,7 +90,7 @@
 }
 /* line 82, ../sass/_content.sass */
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before {
-  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " órán belül...";
+  content: "A kapcsolat megszakadt. Újracsatlakozás " attr(data-retry-in-value) " ó...";
 }
 @media (max-width: 568px) {
   /* line 82, ../sass/_content.sass */
