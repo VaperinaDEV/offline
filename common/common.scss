@@ -27,7 +27,7 @@
     display: block;
   }
   &.offline-ui-down {
-    display: none;
+    display: block;
     &.offline-ui-waiting .offline-ui-retry {
       display: none;
     }
