@@ -116,6 +116,8 @@
     border: 1px solid var(--success-hover);
   }
   &.offline-ui-down {
+     animation: offline-fadein 0s;
+    -webkit-backface-visibility: hidden;
     &.offline-ui-connecting,
     &.offline-ui-waiting {
       background: var(--danger-low);
