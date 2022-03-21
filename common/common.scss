@@ -156,6 +156,7 @@
 .offline-ui {
   font-weight: 600;
   .offline-ui-retry:before {
+    display: none;
     content: "Újrakapcsolódás most";
   }
   &.offline-ui-up {
