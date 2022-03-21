@@ -166,12 +166,14 @@
   }
   &.offline-ui-up {
     .offline-ui-content:before {
-      content: "A számítógéped kapcsolódik az internethez...";
+      content: "Jelenleg online vagy!";
+      font-weight: 600;
     }
   }
   &.offline-ui-down {
     .offline-ui-content:before {
-      content: "A számítógéped elvesztette az internetkapcsolatot...";
+      content: "Jelenleg offline vagy!";
+      font-weight: 600;
     }
     &.offline-ui-connecting,
     &.offline-ui-connecting-2s {
@@ -183,26 +185,26 @@
       .offline-ui-content {
         &[data-retry-in-unit="second"] {
           &:before {
-            content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "mp...";
+            content: "Jelenleg offline vagy! Újrakapcsolódás " attr(data-retry-in-value) "mp...";
           }
           &[data-retry-in-value="1"]:before {
-            content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "mp...";
+            content: "Jelenleg offline vagy! Újrakapcsolódás " attr(data-retry-in-value) "mp...";
           }
         }
         &[data-retry-in-unit="minute"] {
           &:before {
-            content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "p...";
+            content: "Jelenleg offline vagy! Újrakapcsolódás " attr(data-retry-in-value) "p...";
           }
           &[data-retry-in-value="1"]:before {
-            content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "p...";
+            content: "Jelenleg offline vagy! Újrakapcsolódás " attr(data-retry-in-value) "p...";
           }
         }
         &[data-retry-in-unit="hour"] {
           &:before {
-            content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "ó...";
+            content: "Jelenleg offline vagy! Újrakapcsolódás " attr(data-retry-in-value) "ó...";
           }
           &[data-retry-in-value="1"]:before {
-            content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "ó...";
+            content: "Jelenleg offline vagy! Újrakapcsolódás " attr(data-retry-in-value) "ó...";
           }
         }
       }
