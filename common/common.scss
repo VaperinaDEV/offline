@@ -160,7 +160,9 @@
     }
   }
   &.offline-ui-down {
-    content: "Hahó! Nincs neted! 😦";
+    .offline-ui-content:before {
+      content: "Hahó! Nincs neted! 😦";
+    }
     &.offline-ui-connecting,
     &.offline-ui-connecting-2s {
       .offline-ui-content:before {
