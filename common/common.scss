@@ -27,9 +27,9 @@
     display: block;
   }
   &.offline-ui-down {
-    display: block;
+    display: none;
     &.offline-ui-waiting .offline-ui-retry {
-      display: block;
+      display: none;
     }
     &.offline-ui-reconnect-failed-2s.offline-ui-waiting .offline-ui-retry {
       display: none;
@@ -100,7 +100,6 @@
     line-height: 1.25em;
   }
   .offline-ui-retry {
-    display: none;
     position: relative;
     background: rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -156,7 +155,6 @@
 .offline-ui {
   font-weight: 600;
   .offline-ui-retry:before {
-    display: none;
     content: "Újrakapcsolódás most";
   }
   &.offline-ui-up {
