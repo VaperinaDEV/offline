@@ -99,16 +99,13 @@
     line-height: 1.25em;
   }
   .offline-ui-retry {
-    position: absolute;
-    right: 3em;
-    top: 0;
-    bottom: 0;
+    position: relative;
     background: rgba(0, 0, 0, 0.1);
     text-decoration: none;
     color: inherit;
-    line-height: 3.5em;
-    height: 3.5em;
-    margin: auto;
+    line-height: 2;
+    width: max-content;
+    margin: 0.5em auto 0 auto;
     padding: 0 1em;
   }
   &.offline-ui-up {
@@ -129,7 +126,6 @@
       background: var(--tertiary-low);
       color: var(--tertiary-hover);
       border: 1px solid var(--tertiary-hover);
-      padding-right: 3em;
       &:after {
         border-radius: 50%;
         content: " ";
@@ -149,31 +145,24 @@
         animation: offline-rotation 0.7s linear infinite;
       }
     }
-    &.offline-ui-waiting {
-      padding-right: 11em;
-      &.offline-ui-reconnect-failed-2s {
-        padding-right: 0;
-      }
-    }
   }
 }
 
 // Language
 
 .offline-ui {
+  text-align: center;
   .offline-ui-retry:before {
-    content: "most";
+    content: "Újrakapcsolódás";
   }
   &.offline-ui-up {
     .offline-ui-content:before {
       content: "Jelenleg online vagy!";
-      font-weight: 600;
     }
   }
   &.offline-ui-down {
     .offline-ui-content:before {
       content: "Jelenleg offline vagy!";
-      font-weight: 600;
     }
     &.offline-ui-connecting,
     &.offline-ui-connecting-2s {
