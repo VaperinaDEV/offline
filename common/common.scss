@@ -153,7 +153,7 @@
   }
 }
 
-// Lang
+// Language
 
 .offline-ui .offline-ui-retry:before {
   content: "Kapcsolódás";
@@ -188,31 +188,31 @@
   content: "Újrakapcsolódási kísérlet...";
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
-  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " mp...";
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " mp-en belül...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
-    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp...";
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp-en belül...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
-  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " mp...";
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " mp-en belül...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
-    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp...";
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp-en belül...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
-  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " p...";
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " percen belül...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
-    content: "Újrakapcsolódás " attr(data-retry-in-value) "p...";
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "percen belül...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before {
-  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " p...";
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " percen belül...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before {
@@ -220,19 +220,19 @@
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before {
-  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " ó...";
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " órán belül...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before {
-    content: "Újrakapcsolódás " attr(data-retry-in-value) "ó...";
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "órán belül...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before {
-  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " ó...";
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " órán belül...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before {
-    content: "Újrakapcsolódás " attr(data-retry-in-value) "ó...";
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "órán belül...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s.offline-ui-waiting .offline-ui-retry {
