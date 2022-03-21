@@ -153,8 +153,10 @@
 // Language
 
 .offline-ui {
+  display: block;
   .offline-ui-retry:before {
-    content: "Újrakapcsolódás";
+    content: "Kapcsolódás most";
+    font-weight: 600;
   }
   &.offline-ui-up {
     .offline-ui-content:before {
