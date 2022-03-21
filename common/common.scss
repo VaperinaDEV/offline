@@ -91,6 +91,7 @@
   }
   .mobile-view & {
     bottom: 50px;
+    width: 100%;
     @media (max-width: 600px) {
       border-radius: 0;
     }
