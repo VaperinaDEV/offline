@@ -80,19 +80,20 @@
 }
 
 .offline-ui {
-  border-radius: 1em;
-  padding: 1em;
-  bottom: 1em;
-  right: 1em;
-  width: 300px;
+  border-radius: 0.25em;
+  padding: 0.75em 1em;
+  bottom: 0;
+  width: 600px;
   max-width: 100%;
   overflow: hidden;
   .mobile-view & {
     bottom: 50px;
-    width: calc(100vw - 4em);
+    @media (max-width: 600px) {
+      border-radius: 0;
+    }
   }
   .tab-bar-hidden & {
-    bottom: 1em;
+    bottom: 0;
   }
   .offline-ui-content:before {
     line-height: 1.25em;
@@ -160,16 +161,16 @@
   content: "most";
 }
 .offline-ui.offline-ui-up .offline-ui-content:before {
-  content: "A számítógéped ismét kapcsolódik az internethez...";
+  content: "A számítógéped kapcsolódik az internethez...";
 }
 @media (max-width: 1024px) {
   .offline-ui.offline-ui-up .offline-ui-content:before {
-    content: "A készüléked ismét kapcsolódik az internethez...";
+    content: "A készüléked kapcsolódik az internethez...";
   }
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-up .offline-ui-content:before {
-    content: "A készüléked ismét kapcsolódik az internethez...";
+    content: "A készüléked kapcsolódik az internethez...";
   }
 }
 .offline-ui.offline-ui-down .offline-ui-content:before {
@@ -189,69 +190,56 @@
   content: "Újrakapcsolódási kísérlet...";
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
-  content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "mp...";
-  white-space: pre-wrap;
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "mp...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
-    content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "mp...";
-    white-space: pre-wrap;
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
-  content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "mp...";
-  white-space: pre-wrap;
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "mp...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
-    content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "mp...";
-    white-space: pre-wrap;
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
-  content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "p...";
-  white-space: pre-wrap;
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "p...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
-    content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "p...";
-    white-space: pre-wrap;
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "p...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before {
-  content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "p...";
-  white-space: pre-wrap;
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "p...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before {
-    content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "p...";
-    white-space: pre-wrap;
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "p...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before {
-  content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "ó...";
-  white-space: pre-wrap;
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "ó...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before {
-    content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "ó...";
-    white-space: pre-wrap;
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "ó...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before {
-  content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "ó...";
-  white-space: pre-wrap;
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "ó...";
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before {
-    content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\Újrakapcsolódás " attr(data-retry-in-value) "ó...";
-    white-space: pre-wrap;
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "ó...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s.offline-ui-waiting .offline-ui-retry {
   display: none;
 }
 .offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s .offline-ui-content:before {
-  content: "Jelenleg offline vagy! Kérlek ellenőrizd az internetkapcsolatod. Ameddig a kapcsolat nem áll helyre, a gyorsítótárban mentett verziót böngészed.\A kapcsolódási kísérlet sikertelen...";
-  white-space: pre-wrap;
+  content: "A kapcsolódási kísérlet sikertelen...";
 }
