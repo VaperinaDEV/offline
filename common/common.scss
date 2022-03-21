@@ -88,7 +88,9 @@
   overflow: hidden;
   .mobile-view & {
     bottom: 50px;
-    border-radius: 0;
+    @media (max-width: 600px) {
+      border-radius: 0;
+    }
   }
   .tab-bar-hidden & {
     bottom: 0;
@@ -112,18 +114,18 @@
   &.offline-ui-up {
     animation: offline-fadeout-and-hide forwards 0.5s 2s;
     -webkit-backface-visibility: hidden;
-    background: #d6e9c6;
-    color: #468847;
+    background: var(--success-medium);
+    color: var(--success-hover);
   }
   &.offline-ui-down {
     animation: offline-fadein 0.5s;
     -webkit-backface-visibility: hidden;
-    background: #ec8787;
-    color: #551313;
+    background: var(--danger);
+    color: var(--danger-hover);
     &.offline-ui-connecting,
     &.offline-ui-waiting {
-      background: #f8ecad;
-      color: #7c6d1f;
+      background: var(--tertiary-medium);
+      color: var(--tertiary);
       padding-right: 3em;
       &:after {
         border-radius: 50%;
@@ -137,8 +139,8 @@
         height: 1em;
         width: 1em;
         border: 2px solid rgba(0, 0, 0, 0);
-        border-top-color: #7c6d1f;
-        border-left-color: #7c6d1f;
+        border-top-color: var(--tertiary-medium);
+        border-left-color: var(--tertiary-medium);
         opacity: 0.7;
         border-radius: 50%;
         animation: offline-rotation 0.7s linear infinite;
