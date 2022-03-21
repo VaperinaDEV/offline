@@ -80,12 +80,15 @@
 }
 
 .offline-ui {
-  border-radius: 0.25em;
+  border-radius: 1em;
   padding: 0.75em 1em;
   bottom: 0.5em;
   width: 600px;
   max-width: 100%;
   overflow: hidden;
+  @media (max-width: 600px) {
+    width: calc(100% - 20px);
+  }
   .mobile-view & {
     bottom: 50px;
     @media (max-width: 600px) {
