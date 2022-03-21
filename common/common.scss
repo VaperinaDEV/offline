@@ -152,3 +152,93 @@
     }
   }
 }
+
+// Lang
+
+.offline-ui .offline-ui-retry:before {
+  content: "Kapcsolódás";
+}
+.offline-ui.offline-ui-up .offline-ui-content:before {
+  content: "A számítógéped kapcsolódik az internethez...";
+}
+@media (max-width: 1024px) {
+  .offline-ui.offline-ui-up .offline-ui-content:before {
+    content: "A készüléked kapcsolódik az internethez...";
+  }
+}
+@media (max-width: 568px) {
+  .offline-ui.offline-ui-up .offline-ui-content:before {
+    content: "A készüléked kapcsolódik az internethez...";
+  }
+}
+.offline-ui.offline-ui-down .offline-ui-content:before {
+  content: "A számítógéped elvesztette az internetkapcsolatot...";
+}
+@media (max-width: 1024px) {
+  .offline-ui.offline-ui-down .offline-ui-content:before {
+    content: "A készüléked elvesztette az internetkapcsolatot...";
+  }
+}
+@media (max-width: 568px) {
+  .offline-ui.offline-ui-down .offline-ui-content:before {
+    content: "A készüléked nem kapcsolódik az internethez...";
+  }
+}
+.offline-ui.offline-ui-down.offline-ui-connecting .offline-ui-content:before, .offline-ui.offline-ui-down.offline-ui-connecting-2s .offline-ui-content:before {
+  content: "Újrakapcsolódási kísérlet...";
+}
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " mp...";
+}
+@media (max-width: 568px) {
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp...";
+  }
+}
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " mp...";
+}
+@media (max-width: 568px) {
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp...";
+  }
+}
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " p...";
+}
+@media (max-width: 568px) {
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "p...";
+  }
+}
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before {
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " p...";
+}
+@media (max-width: 568px) {
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before {
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "p...";
+  }
+}
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before {
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " ó...";
+}
+@media (max-width: 568px) {
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before {
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "ó...";
+  }
+}
+.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before {
+  content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) " ó...";
+}
+@media (max-width: 568px) {
+  .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before {
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "ó...";
+  }
+}
+.offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s.offline-ui-waiting .offline-ui-retry {
+  display: none;
+}
+.offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s .offline-ui-content:before {
+  content: "A kapcsolódási kísérlet sikertelen...";
+}
+
