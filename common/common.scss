@@ -90,14 +90,10 @@
     width: calc(100% - 20px);
   }
   .mobile-view & {
-    bottom: 50px;
-    width: 100%;
-    @media (max-width: 600px) {
-      border-radius: 0;
-    }
+    bottom: calc(50px + 1em);
   }
   .tab-bar-hidden & {
-    bottom: 0;
+    bottom: 1em;
   }
   .offline-ui-content:before {
     line-height: 1.25em;
