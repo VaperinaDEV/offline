@@ -6,7 +6,7 @@
   display: none;
   position: fixed;
   background: white;
-  z-index: z("dropdown") - 10;
+  z-index: z("header") - 10;
   margin: auto;
   bottom: 0;
   left: 0;
@@ -156,7 +156,7 @@
 // Language
 
 .offline-ui .offline-ui-retry:before {
-  content: "újra";
+  content: "Kapcsolódás";
 }
 .offline-ui.offline-ui-up .offline-ui-content:before {
   content: "A számítógéped kapcsolódik az internethez...";
@@ -192,7 +192,7 @@
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before {
-    content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "mp...";
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
@@ -200,7 +200,7 @@
 }
 @media (max-width: 568px) {
   .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before {
-    content: "Az internetkapcsolat megszakadt. Újrakapcsolódás " attr(data-retry-in-value) "mp...";
+    content: "Újrakapcsolódás " attr(data-retry-in-value) "mp...";
   }
 }
 .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before {
@@ -241,4 +241,3 @@
 .offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s .offline-ui-content:before {
   content: "A kapcsolódási kísérlet sikertelen...";
 }
-
