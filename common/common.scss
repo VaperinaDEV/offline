@@ -115,9 +115,13 @@
     border: 1px solid var(--success-hover);
   }
   &.offline-ui-down {
+    animation: offline-fadein 0.5s;
+    -webkit-backface-visibility: hidden;
+    background: var(--danger-low);
+    color: var(--danger-hover);
+    border: 1px solid var(--danger-hover);
     &.offline-ui-connecting,
     &.offline-ui-waiting {
-      animation: offline-fadein 0.5s;
       background: var(--danger-low);
       color: var(--danger-hover);
       border: 1px solid var(--danger-hover);
@@ -156,6 +160,7 @@
     }
   }
   &.offline-ui-down {
+    content: "Hahó! Nincs neted! 😦";
     &.offline-ui-connecting,
     &.offline-ui-connecting-2s {
       .offline-ui-content:before {
