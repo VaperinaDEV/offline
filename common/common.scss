@@ -117,6 +117,7 @@
   &.offline-ui-down {
     &.offline-ui-connecting,
     &.offline-ui-waiting {
+      animation: offline-fadein 0.5s;
       background: var(--danger-low);
       color: var(--danger-hover);
       border: 1px solid var(--danger-hover);
