@@ -157,8 +157,9 @@
   }
   &.offline-ui-up {
     .offline-ui-content:before {
-      content: "\f1eb Az internetkapcsolatod helyreállt.";
+      content: "\f1eb" "Az internetkapcsolatod helyreállt.";
       font-weight: 900;
+      font-family: "Font Awesome 5 Pro";
     }
   }
   &.offline-ui-down {
