@@ -116,16 +116,19 @@
     -webkit-backface-visibility: hidden;
     background: var(--success-low);
     color: var(--success-hover);
+    border: 1px solid var(--success-hover);
   }
   &.offline-ui-down {
     animation: offline-fadein 0.5s;
     -webkit-backface-visibility: hidden;
     background: var(--danger-low);
     color: var(--danger-hover);
+    border: 1px solid var(--danger-hover);
     &.offline-ui-connecting,
     &.offline-ui-waiting {
       background: var(--tertiary-low);
-      color: var(--tertiary);
+      color: var(--tertiary-hover);
+      border: 1px solid var(--tertiary-hover);
       padding-right: 3em;
       &:after {
         border-radius: 50%;
