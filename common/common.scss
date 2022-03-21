@@ -116,16 +116,11 @@
     border: 1px solid var(--success-hover);
   }
   &.offline-ui-down {
-    animation: offline-fadein forwards 0.5s 2s;
-    -webkit-backface-visibility: hidden;
-    background: var(--danger-low);
-    color: var(--danger-hover);
-    border: 1px solid var(--danger-hover);
     &.offline-ui-connecting,
     &.offline-ui-waiting {
-      background: var(--tertiary-low);
-      color: var(--tertiary-hover);
-      border: 1px solid var(--tertiary-hover);
+      background: var(--danger-low);
+      color: var(--danger-hover);
+      border: 1px solid var(--danger-hover);
       &:after {
         border-radius: 50%;
         content: " ";
@@ -138,8 +133,8 @@
         height: 1em;
         width: 1em;
         border: 2px solid rgba(0, 0, 0, 0);
-        border-top-color: var(--tertiary-hover);
-        border-left-color: var(--tertiary-hover);
+        border-top-color: var(--danger-hover);
+        border-left-color: var(--danger-hover);
         opacity: 0.7;
         border-radius: 50%;
         animation: offline-rotation 0.7s linear infinite;
@@ -161,9 +156,6 @@
     }
   }
   &.offline-ui-down {
-    .offline-ui-content:before {
-      content: "Húha, offline vagy! 🔌";
-    }
     &.offline-ui-connecting,
     &.offline-ui-connecting-2s {
       .offline-ui-content:before {
