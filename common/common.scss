@@ -116,7 +116,7 @@
     border: 1px solid var(--success-hover);
   }
   &.offline-ui-down {
-    animation: offline-fadein 0.5s;
+    animation: offline-fadein 2s;
     -webkit-backface-visibility: hidden;
     background: var(--danger-low);
     color: var(--danger-hover);
@@ -162,12 +162,12 @@
   }
   &.offline-ui-down {
     .offline-ui-content:before {
-      content: "Jelenleg offline vagy.";
+      content: "Húha, offline vagy! 🔌";
     }
     &.offline-ui-connecting,
     &.offline-ui-connecting-2s {
       .offline-ui-content:before {
-        content: "Újrakapcsolódási kísérlet...";
+        content: "Kapcsolódási kísérlet...";
       }
     }
     &.offline-ui-waiting {
@@ -175,46 +175,28 @@
         &[data-retry-in-unit="second"] {
           white-space: pre;
           &:before {
-            content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "mp-en belül...";
-            @media (max-width: 600px) {
-              content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "mp-en belül...";
-            }
+            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "mp-en belül...";
           }
           &[data-retry-in-value="1"]:before {
-            content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "mp-en belül...";
-            @media (max-width: 600px) {
-              content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "mp-en belül...";
-            }
+            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "mp-en belül...";
           }
         }
         &[data-retry-in-unit="minute"] {
           white-space: pre;
           &:before {
-            content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "percen belül...";
-            @media (max-width: 600px) {
-              content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "percen belül...";
-            }
+            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "percen belül...";
           }
           &[data-retry-in-value="1"]:before {
-            content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "percen belül...";
-            @media (max-width: 600px) {
-              content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "percen belül...";
-            }
+            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "percen belül...";
           }
         }
         &[data-retry-in-unit="hour"] {
           white-space: pre;
           &:before {
-            content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "órán belül...";
-            @media (max-width: 600px) {
-              content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "órán belül...";;
-            }
+            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "órán belül...";
           }
           &[data-retry-in-value="1"]:before {
-            content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "órán belül...";
-            @media (max-width: 600px) {
-              content: "Hahó! Nincs neted! 😦 \A Újrakapcsolódás: " attr(data-retry-in-value) "órán belül...";
-            }
+            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "órán belül...";
           }
         }
       }
