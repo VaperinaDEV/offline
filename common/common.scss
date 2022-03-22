@@ -156,17 +156,17 @@
   }
   &.offline-ui-up {
     .offline-ui-content:before {
-      content: "Ezazz, újra online! 🎉";
+      content: "#{$online}";
     }
   }
   &.offline-ui-down {
     .offline-ui-content:before {
-      content: "Hahó! Nincs neted! 😦";
+      content: "#{$offline}";
     }
     &.offline-ui-connecting,
     &.offline-ui-connecting-2s {
       .offline-ui-content:before {
-        content: "Kapcsolódási kísérlet...";
+        content: "#{$tryconnect}";
       }
     }
     &.offline-ui-waiting {
@@ -174,28 +174,28 @@
         &[data-retry-in-unit="second"] {
           white-space: pre;
           &:before {
-            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "mp-en belül...";
+            content: "#{$waiting} \A #{$waitconnect} " attr(data-retry-in-value) "#{$waitinsecond}";
           }
           &[data-retry-in-value="1"]:before {
-            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "mp-en belül...";
+            content: "#{$waiting} \A #{$waitconnect} " attr(data-retry-in-value) "#{$waitinsecond}";
           }
         }
         &[data-retry-in-unit="minute"] {
           white-space: pre;
           &:before {
-            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "percen belül...";
+            content: "#{$waiting} \A #{$waitconnect} " attr(data-retry-in-value) "#{$waitinminute}";
           }
           &[data-retry-in-value="1"]:before {
-            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "percen belül...";
+            content: "#{$waiting} \A #{$waitconnect} " attr(data-retry-in-value) "#{$waitinminute}";
           }
         }
         &[data-retry-in-unit="hour"] {
           white-space: pre;
           &:before {
-            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "órán belül...";
+            content: "#{$waiting} \A #{$waitconnect} " attr(data-retry-in-value) "#{$waitinhour}";
           }
           &[data-retry-in-value="1"]:before {
-            content: "Hahó! Nincs neted! 😦 \A Kapcsolódás: " attr(data-retry-in-value) "órán belül...";
+            content: "#{$waiting} \A #{$waitconnect} " attr(data-retry-in-value) "#{$waitinhour}";
           }
         }
       }
@@ -207,7 +207,7 @@
         }
       }
       .offline-ui-content:before {
-        content: "A kapcsolódás sikertelen...";
+        content: "#{$failconnect}";
       }
     }
   }
