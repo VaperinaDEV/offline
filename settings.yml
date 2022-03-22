@@ -1,18 +1,18 @@
 offline:
   default: Hahó! Nincs neted! 😦
-tryconnect:
+try_connect:
   default: Kapcsolódási kísérlet...
 waiting:
   default: Hahó! Nincs neted! 😦
-waitconnect:
+wait_in_connect:
   default: Kapcsolódás
-waitinsecond:
+wait_in_seconds:
   default: mp-n belül...
-waitinminute:
+wait_in_minutes:
   default: percen belül...
-waitinhour:
+wait_in_hours:
   default: órán belül...
-failconnect:
+fail_connect:
   default: A kapcsolódás sikertelen...
 online:
   default: Ezazz, újra online! 🎉
