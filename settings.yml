@@ -5,7 +5,7 @@ tryconnect:
 waiting:
   default: Hahó! Nincs neted! 😦
 waitconnect:
-  default: Kapcsolódás:
+  default: Kapcsolódás
 waitinsecond:
   default: mp-n belül...
 waitinminute:
