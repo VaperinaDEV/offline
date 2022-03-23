@@ -151,7 +151,6 @@
 
 .offline-ui {
   font-weight: 600;
-  font-size: var(--font-down-1);
   &.offline-ui-up {
     .offline-ui-content:before {
       content: "#{$online}";
