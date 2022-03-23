@@ -3,7 +3,7 @@ offline:
 try_connect:
   default: Kapcsolódási kísérlet...
 description:
-  default: Megszakadt a kapcsolat a szerverrel
+  default: Megszakadt a kapcsolat...
 waiting:
   default: Hahó...Offline vagy! 😦
 wait_in_connect:
