@@ -1,9 +1,11 @@
 offline:
-  default: Hahó! Nincs neted! 😦
+  default: Hahó...Offline vagy! 😦
 try_connect:
   default: Kapcsolódási kísérlet...
+description:
+  default: Megszakadt a kapcsolat a szerverrel
 waiting:
-  default: Hahó! Nincs neted! 😦
+  default: Hahó...Offline vagy! 😦
 wait_in_connect:
   default: Kapcsolódás
 wait_in_seconds:
