@@ -1,5 +1,7 @@
 offline:
   default: Hahó...Offline vagy! 😦
+connect_ok:
+  default: Helyreállt a kapcsolat...
 try_connect:
   default: Kapcsolódási kísérlet...
 description:
