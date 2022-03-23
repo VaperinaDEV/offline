@@ -1,7 +1,5 @@
 offline:
   default: Hahó...Offline vagy! 😦
-connect_ok:
-  default: Helyreállt a kapcsolat...
 try_connect:
   default: Kapcsolódási kísérlet...
 description:
@@ -20,3 +18,5 @@ fail_connect:
   default: A kapcsolódás sikertelen...
 online:
   default: Ezazz, újra online! 🎉
+connect_ok:
+  default: Helyreállt a kapcsolat...
