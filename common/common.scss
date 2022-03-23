@@ -152,8 +152,11 @@
 .offline-ui {
   font-weight: 600;
   &.offline-ui-up {
-    .offline-ui-content:before {
-      content: "#{$online}";
+    .offline-ui-content {
+      white-space: pre-line;
+      &:before {
+        content: "#{$online} \A #{$connect_ok}";
+      }
     }
   }
   &.offline-ui-down {
