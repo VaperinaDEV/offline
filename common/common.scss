@@ -151,6 +151,7 @@
 
 .offline-ui {
   font-weight: 600;
+  max-width: calc(100% - 1em);
   &.offline-ui-up {
     .offline-ui-content:before {
       content: "#{$online}";
