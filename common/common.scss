@@ -160,8 +160,11 @@
     }
   }
   &.offline-ui-down {
-    .offline-ui-content:before {
-      content: "#{$offline}";
+    .offline-ui-content {
+      white-space: pre-line;
+      &:before {
+        content: "#{$offline} \A #{$description}";
+      }
     }
     &.offline-ui-connecting,
     &.offline-ui-connecting-2s {
