@@ -20,3 +20,6 @@ online:
   default: Ezazz, újra online! 🎉
 connect_ok:
   default: Helyreállt a kapcsolat...
+extend_content_security_policy:
+  type: list
+  default: "script_src: https://rawgit.com/VaperinaDEV/offline/main/offline.min.js"
